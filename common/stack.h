@@ -3,7 +3,12 @@
 
 using namespace std;
 
+/// <typeparam name="T">Тип данных, хранящихся в стеке.</typeparam>
 template<class T>
+
+/// <summary>
+/// Класс `Stack` реализует структуру данных "стек" с использованием связного списка.
+/// </summary>
 class Stack
 {
     public:
@@ -35,6 +40,9 @@ class Stack
         int size;
 };
 
+/// <summary>
+/// Добавляет элемент на вершину стека.
+/// </summary>
 template <class T>
 void Stack<T>::push(T elem)
 {
@@ -42,6 +50,9 @@ void Stack<T>::push(T elem)
     size++;
 }
 
+/// <summary>
+/// Удаляет и возвращает элемент с вершины стека.
+/// </summary>
 template <class T>
 T Stack<T>::pop()
 {
@@ -57,6 +68,9 @@ T Stack<T>::pop()
     return elem;
 }
 
+/// <summary>
+/// Возвращает значение элемента на вершине стека без его удаления.
+/// </summary>
 template <class T>
 T Stack<T>::peek()
 {
@@ -67,12 +81,18 @@ T Stack<T>::peek()
     return top->data;
 }
 
+/// <summary>
+/// Возвращает количество элементов в стеке.
+/// </summary>
 template <class T>
 int Stack<T>::count()
 {
     return size;
 }
 
+/// <summary>
+/// Очищает стек, удаляя все элементы.
+/// </summary>
 template <class T>
 void Stack<T>::clear()
 {
