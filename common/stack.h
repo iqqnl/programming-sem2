@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/// <typeparam name="T">Тип данных, хранящихся в стеке.</typeparam>
+/// <typeparam name="T">Тип данных, хранящихся в стеке </typeparam>
 template<class T>
 
 /// <summary>
