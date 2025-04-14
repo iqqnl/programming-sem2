@@ -18,7 +18,7 @@ class Stack
         }
         void push(T elem);
         T pop();
-        T peek();
+        T peek(); 
         int count();
         void clear();
 
